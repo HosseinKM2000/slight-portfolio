@@ -1,8 +1,9 @@
 import FloatBoxes from "@/components/FloatBoxes";
+import Navigation from "@/components/Navigation";
 import "@/styles/custom.css";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import ToastProvider from "../providers/react-toastify";
+import ToastProvider from "@/src/providers/react-toastify";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <FloatBoxes />
+        <Navigation />
         <ToastProvider>{children}</ToastProvider>
       </body>
     </html>
